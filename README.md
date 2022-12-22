@@ -12,9 +12,7 @@ This is an simple example python script that shows how to implement an AWS Lambd
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Create [Zoom Marketplace OAuth App](https://marketplace.zoom.us/docs/guides/build/oauth-app/) and get a Zoom Account Client ID and Client Secert 
+1. Create [Zoom Marketplace OAuth App](https://marketplace.zoom.us/docs/guides/build/oauth-app/) and get Client ID and Client Secert 
 
 
 2. Clone the repo
