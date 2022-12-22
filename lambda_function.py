@@ -3,7 +3,9 @@ import requests.auth
 
 def lambda_handler(event, context):   
    
-    response = get_token(event["queryStringParameters"]["code"])
+    access_token = get_token(event["queryStringParameters"]["code"])
+    response = get_userdata(access_token)
+
     return response
 
 
@@ -19,3 +21,10 @@ def get_token(code):
     token_json = response.json()
     
     return token_json['access_token']
+
+def get_userdata(access_token):
+    
+    headers= {"Authorization": "bearer " + access_token}
+    response = requests.get("https://api.zoom.us/v2/users/me", headers=headers)
+    me_json = response.json()
+    return me_json

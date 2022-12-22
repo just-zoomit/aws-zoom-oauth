@@ -26,8 +26,10 @@ _Below is an example of how you can instruct your audience on installing and set
    pip install --target ./package requests
    ```
 
-4. This is an example of how to deploy your .zip file to the function to AWS
+4. Deploy your .zip file to the function to AWS
 
-  ```sh
-  sh lambda-update.sh 
-  ```
+    ```sh
+    sh lambda-update.sh 
+    ```
+
+5. In the lambda console, verify the function updated as expected. 
