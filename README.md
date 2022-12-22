@@ -24,7 +24,7 @@ This is an simple example python script that shows how to implement an AWS Lambd
    pip install --target ./package requests
    ```
 
-4. Deploy your .zip file to the function to AWS
+4. Deploy your .zip file to the AWS lambda function
 
     ```sh
     sh lambda-update.sh 
